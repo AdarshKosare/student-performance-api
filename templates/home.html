@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Performance Prediction</title>
+</head>
+
+<body>
+    <h1>Student Performance Prediction</h1>
+
+    <form action="/" method="post">
+        <label>Study Hours:</label>
+        <input type="text" name="study_hours"><br><br>
+
+        <label>Previous Score:</label>
+        <input type="text" name="previous_score"><br><br>
+
+        <label>Sleep Hours:</label>
+        <input type="text" name="sleep_hours"><br><br>
+
+        <label>Practiced Sample Paper Count:</label>
+        <input type="text" name="practiced_sample_paper_count"><br><br>
+
+        <label>Extracurricular Activities:</label>
+        <select name="extracurricular_activities">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </select>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if linear or lasso or ridge %}
+    <h2>Results:</h2>
+    <p><strong>Linear Regression:</strong> {{ linear }}</p>
+    <p><strong>Lasso Regression:</strong> {{ lasso }}</p>
+    <p><strong>Ridge Regression:</strong> {{ ridge }}</p>
+    {% endif %}
+</body>
+
+</html>
