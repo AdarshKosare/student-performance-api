@@ -1,14 +1,109 @@
-# Student Performance Prediction API
 
-A FastAPI-based project for predicting student performance using a machine learning model.
+# Student Performance Prediction API 🎓
 
-## Structure
-- `app/`: FastAPI application and utilities
-- `model/`: ML model file
-- `notebooks/`: Jupyter notebook for training
-- `tests/`: Pytest-based tests
+A Machine Learning–powered REST API built using **FastAPI** that predicts student performance based on input features. This project showcases a complete ML pipeline — from data processing and model training to API deployment.
 
-## Usage
-1. Install dependencies: `pip install -r requirements.txt`
-2. Run API: `uvicorn app.main:app --reload`
-3. Train model: see `notebooks/train_model.ipynb`
+---
+
+## 🚀 Features
+
+- Predict student performance using a trained ML model  
+- FastAPI-based RESTful API  
+- Interactive Swagger UI (`/docs`)  
+- Model training via Jupyter Notebook  
+- Modular project structure  
+- Ready for cloud deployment  
+- Unit testing support  
+
+---
+
+## 🧰 Tech Stack
+
+- Python  
+- FastAPI  
+- Scikit-Learn  
+- Uvicorn  
+- Jupyter  
+- Pytest  
+
+---
+
+## 📁 Project Structure
+
+student-performance-api/
+├── app/
+├── model/
+├── notebooks/
+├── templates/
+├── tests/
+├── requirements.txt
+├── Dockerfile
+└── README.md
+
+---
+
+## ✅ Prerequisites
+
+- Python 3.8+
+- pip
+
+---
+
+## 🛠️ Installation
+
+git clone https://github.com/AdarshKosare/student-performance-api.git  
+cd student-performance-api  
+python -m venv env  
+env\Scripts\activate  
+pip install -r requirements.txt  
+
+---
+
+## 🚄 Running the API
+
+uvicorn app.main:app --reload  
+
+Open: http://127.0.0.1:8000/docs
+
+---
+
+## 📊 API Example
+
+Input:
+{
+  "study_hours": 10
+  "previous_score": 80
+  "sleep_hours": 8
+  "practiced_sample_paper_count": 15
+  "extracurricular_activities": Yes
+}
+
+Output:
+{
+  "predicted_score": 83.2
+}
+
+---
+
+## 📝 Model Training
+
+notebooks/train_model.ipynb
+
+---
+
+## 🤝 Contribution
+
+Fork → Branch → Commit → Pull Request
+
+---
+
+## 📄 License
+
+MIT License
+
+---
+
+## 👤 Author
+
+Adarsh Kosare  
+GitHub: https://github.com/AdarshKosare
