@@ -31,13 +31,14 @@ A Machine Learning–powered REST API built using **FastAPI** that predicts stud
 ## 📁 Project Structure
 
 student-performance-api/
-├── app/
-├── model/
-├── notebooks/
-├── templates/
-├── tests/
-├── requirements.txt
-├── Dockerfile
+├── app/                # Main FastAPI application
+├── model/              # Trained ML model
+├── notebooks/          # Jupyter notebooks for training
+├── templates/          # HTML templates (if used)
+├── tests/              # Unit test cases
+├── requirements.txt   # Project dependencies
+├── Dockerfile          # Docker configuration
+└── README.md           # Project documentation
 └── README.md
 
 ---
