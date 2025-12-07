@@ -39,7 +39,6 @@ student-performance-api/
 ├── requirements.txt   # Project dependencies
 ├── Dockerfile          # Docker configuration
 └── README.md           # Project documentation
-└── README.md
 
 ---
 
